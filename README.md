@@ -44,6 +44,11 @@ go run ./cmd/tsc --version
 go test ./...
 ```
 
+> **Personal note:** I've been running tests with `-count=1` to avoid cached results while exploring the codebase:
+> ```bash
+> go test -count=1 ./...
+> ```
+
 ## Project Structure
 
 ```
