@@ -2,6 +2,9 @@ module github.com/nicholasgasior/typescript-go
 
 go 1.22
 
+// Personal fork of microsoft/typescript-go for learning purposes.
+// Upstream: https://github.com/microsoft/typescript-go
+
 require (
 	golang.org/x/text v0.14.0
 	golang.org/x/tools v0.19.0
