@@ -48,6 +48,11 @@ go test ./...
 > ```bash
 > go test -count=1 ./...
 > ```
+>
+> Adding `-v` is also handy when drilling into a specific package:
+> ```bash
+> go test -count=1 -v ./internal/parser/...
+> ```
 
 ## Project Structure
 
