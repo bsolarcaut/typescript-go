@@ -63,6 +63,8 @@ go test ./...
 > ```bash
 > go test -count=1 -short -parallel 8 ./...
 > ```
+>
+> **Tip:** I added a `Makefile` target locally (`make test`) that wraps the above command so I don't have to remember all the flags.
 
 ## Project Structure
 
