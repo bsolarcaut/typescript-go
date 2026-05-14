@@ -66,6 +66,14 @@ go test ./...
 >
 > **Tip:** I added a `Makefile` target locally (`make test`) that wraps the above command so I don't have to remember all the flags.
 
+### Benchmarking
+
+> **Personal note:** To get a quick sense of parser performance on a specific package, I run:
+> ```bash
+> go test -bench=. -benchmem -count=3 ./internal/parser/...
+> ```
+> Useful for sanity-checking that changes haven't regressed hot paths.
+
 ## Project Structure
 
 ```
@@ -95,4 +103,4 @@ Contributions are welcome! Please open an issue before submitting large pull req
 
 This project is licensed under the [Apache 2.0 License](LICENSE).
 
-Portions of this codebase are derived from [microsoft/TypeScript](https://github.com/microsoft/TypeScript), which is licensed under the [Apache 2.0 License](https://github.com/microsoft/TypeScript/blob/main/LICENSE.txt).
+Portions of this codebase are derived from [microsoft/TypeScript](https://github.com/microsoft/TypeScript), which is licensed under the [Apache 2.0 License](https://github.
