@@ -97,11 +97,12 @@ typescript-go/
 └── tests/            # Integration and conformance tests
 ```
 
+## Notes / Personal TODOs
+
+- [ ] Investigate whether the checker can be parallelized further for large monorepos
+- [ ] Try profiling with `go tool pprof` on a real-world project to find hot spots
+- [ ] Look into whether `emitter` handles decorators correctly once that feature lands
+
 ## Contributing
 
-Contributions are welcome! Please open an issue before submitting large pull requests so we can discuss the approach.
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feat/my-feature`)
-3. Commit your changes following [Conventional Commits](https://www.conventionalcommits.org/)
-4. Push and open a Pull 
+Contr
