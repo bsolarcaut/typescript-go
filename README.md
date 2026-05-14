@@ -58,6 +58,11 @@ go test ./...
 > ```bash
 > go test -count=1 -short ./...
 > ```
+>
+> To run tests in parallel and speed things up on my machine (8 cores), I also use:
+> ```bash
+> go test -count=1 -short -parallel 8 ./...
+> ```
 
 ## Project Structure
 
