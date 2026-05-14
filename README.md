@@ -53,6 +53,11 @@ go test ./...
 > ```bash
 > go test -count=1 -v ./internal/parser/...
 > ```
+>
+> For a quicker feedback loop during active development, I use `-short` to skip slower conformance tests:
+> ```bash
+> go test -count=1 -short ./...
+> ```
 
 ## Project Structure
 
