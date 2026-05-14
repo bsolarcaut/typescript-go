@@ -73,6 +73,13 @@ go test ./...
 > go test -bench=. -benchmem -count=3 ./internal/parser/...
 > ```
 > Useful for sanity-checking that changes haven't regressed hot paths.
+>
+> To save benchmark output for comparison across commits, I pipe results to a file and use `benchstat`:
+> ```bash
+> go test -bench=. -benchmem -count=5 ./internal/parser/... > bench_new.txt
+> benchstat bench_old.txt bench_new.txt
+> ```
+> Install `benchstat` with: `go install golang.org/x/perf/cmd/benchstat@latest`
 
 ## Project Structure
 
@@ -97,10 +104,4 @@ Contributions are welcome! Please open an issue before submitting large pull req
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feat/my-feature`)
 3. Commit your changes following [Conventional Commits](https://www.conventionalcommits.org/)
-4. Push and open a Pull Request
-
-## License
-
-This project is licensed under the [Apache 2.0 License](LICENSE).
-
-Portions of this codebase are derived from [microsoft/TypeScript](https://github.com/microsoft/TypeScript), which is licensed under the [Apache 2.0 License](https://github.
+4. Push and open a Pull 
