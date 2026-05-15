@@ -97,12 +97,8 @@ typescript-go/
 └── tests/            # Integration and conformance tests
 ```
 
-## Notes / Personal TODOs
+## Notes / Personal TODO
 
-- [ ] Investigate whether the checker can be parallelized further for large monorepos
-- [ ] Try profiling with `go tool pprof` on a real-world project to find hot spots
-- [ ] Look into whether `emitter` handles decorators correctly once that feature lands
-
-## Contributing
-
-Contr
+- [ ] Investigate checker performance on large union types — noticed slowness on a real-world project with deeply nested conditionals
+- [ ] Look into whether the emitter handles `const enum` inlining the same way upstream `tsc` does
+- [ ] Try wiring up `gopls` to get IDE support while hacking on the internals
